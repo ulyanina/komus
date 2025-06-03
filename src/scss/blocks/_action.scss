@@ -1,0 +1,41 @@
+.action {
+   background-color: #f1f3f9;
+   width: 984px;
+   height: 90px;
+   margin-bottom: 48px;
+   padding: 24px 48px;
+   &__row {
+      display: flex;
+      justify-content: center;
+      & h2 {
+         font-family: Montserrat;
+         font-size: 26px;
+         font-weight: 600;
+         line-height: 32px;
+         margin-right: 24px;
+         align-self: center;
+      }
+   }
+
+   &__button {
+      width: 158px;
+      height: 42px;
+      background-color: #da1f2a;
+      font-family: FiraSans;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+      color: #ffffff;
+      cursor: pointer;
+      border-radius: 6px;
+      &:hover {
+         background-color: #b51b22;
+      }
+      &:active {
+         background-color: #ec3818;
+      }
+      &:focus {
+         filter: drop-shadow(0 0 5px #b51b22);
+      }
+   }
+}
