@@ -1,0 +1,77 @@
+.promo {
+   padding-top: 18px;
+   height: 148px;
+   position: relative;
+   &__info {
+      position: absolute;
+      left: 48px;
+      top: 18px;
+      z-index: 2;
+      max-width: 601px;
+      & h1 {
+         font-family: Montserrat;
+         font-size: 32px;
+         font-weight: 600;
+         line-height: 40px;
+         margin-bottom: 8px;
+      }
+   }
+
+   &__img {
+   }
+   &__vector {
+      & img {
+         position: absolute;
+         top: 0;
+         right: 0;
+      }
+   }
+
+   &__app {
+      & img {
+         width: 185px;
+         position: absolute;
+         top: 6px;
+         right: 97px;
+      }
+   }
+
+   &__like {
+      & img {
+         width: 41px;
+         position: absolute;
+         bottom: 9px;
+         right: 314px;
+      }
+   }
+
+   &__ruble {
+      & img {
+         width: 87px;
+         position: absolute;
+         bottom: 23px;
+         right: 195px;
+      }
+   }
+
+   &__rating {
+      & img {
+         width: 45px;
+         position: absolute;
+         top: 92px;
+         right: 63px;
+      }
+   }
+}
+.subheader {
+   display: flex;
+   & img {
+      width: 18px;
+      margin: 3px;
+   }
+   &__info {
+      align-self: center;
+      line-height: 15px;
+      color: #1390df;
+   }
+}

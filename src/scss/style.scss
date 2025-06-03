@@ -1,0 +1,21 @@
+@import "libs/null";
+@import "libs/fonts";
+// @import "libs/animate";
+
+body {
+   height: 100%;
+}
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+}
+.container {
+   max-width: 984px;
+   margin: auto;
+   // padding: 0 15px;
+}
+// @import "base/animations";
+// @import "base/variables";
+@import "blocks/promo";
+// @import "blocks/footer";
+// @import "base/media";
