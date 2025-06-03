@@ -2,6 +2,7 @@
    padding-top: 18px;
    height: 148px;
    position: relative;
+   margin-bottom: 48px;
    &__info {
       position: absolute;
       left: 48px;
@@ -31,7 +32,7 @@
       & img {
          width: 185px;
          position: absolute;
-         top: 6px;
+         top: 5px;
          right: 97px;
       }
    }
@@ -70,7 +71,10 @@
       margin: 3px;
    }
    &__info {
+      font-family: 'FiraSans';
       align-self: center;
+      font-weight: 400;
+      font-size: 13px;
       line-height: 15px;
       color: #1390df;
    }
