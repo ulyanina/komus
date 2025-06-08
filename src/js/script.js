@@ -1,45 +1,66 @@
-window.addEventListener("DOMContentLoaded", () => {
+document.querySelectorAll('.faq details').forEach((item) =&gt; {
+  item.addEventListener('toggle', (event) =&gt; {
+    if (event.target.open) {
+      document.querySelectorAll('.faq details').forEach((otherItem) =&gt; {
+        if (otherItem !== event.target) {
+          otherItem.removeAttribute('open');
+        }
+      });
+    }
+  });
+});
+
+
+// window.addEventListener("DOMContentLoaded", () => {
   //TODO script_menu_ & _hamburger:
   // first variant of menu
-  /*
-    const menu = document.querySelector('.menu'),
-        menuItem = document.querySelectorAll('.menu_item'),
-        closeBtn = document.querySelector('.menu__close'),
-        veil = document.querySelector('.veil'),
-        hamburger = document.querySelector('.hamburger');
 
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('hamburger_active');
-        menu.classList.toggle('menu_active');
-        veil.classList.toggle('presentation-veil'); //пелена 
-    });
+const arrowUp = document.querySelector('.arrow-up'),
+   arrowDown = document.querySelector('.arrow-down'),
+      questionButton = document.querySelector('.faq__question');
 
-    closeBtn.addEventListener('click', () => {
-		menu.classList.toggle('menu-active');
-		veil.classList.toggle('presentation-veil'); //пелена 
-	});
 
-    menuItem.forEach(item => {
-        item.addEventListener('click', () => {
-            hamburger.classList.toggle('hamburger_active');
-            menu.classList.toggle('menu_active');
-            veil.classList.toggle('presentation-veil');
-        })
-    })
+     
+      //   menuItem = document.querySelectorAll('.menu_item'),
+      //   closeBtn = document.querySelector('.menu__close'),
+      //   veil = document.querySelector('.veil'),
+      //   hamburger = document.querySelector('.hamburger');
+arrowUp.addEventListener('click', () => {
+   arrowUp.classList.toggle('arrow-down'),
+      arrowUp.classList.toggle('arrow-down__active'),
+
+   });
+   //  hamburger.addEventListener('click', () => {
+   //      hamburger.classList.toggle('hamburger_active');
+   //      menu.classList.toggle('menu_active');
+   //      veil.classList.toggle('presentation-veil'); //пелена 
+   //  });
+
+   //  closeBtn.addEventListener('click', () => {
+	// 	menu.classList.toggle('menu-active');
+	// 	veil.classList.toggle('presentation-veil'); //пелена 
+	// });
+
+   //  menuItem.forEach(item => {
+   //      item.addEventListener('click', () => {
+   //          hamburger.classList.toggle('hamburger_active');
+   //          menu.classList.toggle('menu_active');
+   //          veil.classList.toggle('presentation-veil');
+   //      })
+   //  })
 
 
 //second variant of menu
-const humburger = document.querySelector('.humburger'),
-   menu = document.querySelector('.menu'),
-   closeBtn = document.querySelector('.menu__close');
+// const humburger = document.querySelector('.humburger'),
+//    menu = document.querySelector('.menu'),
+//    closeBtn = document.querySelector('.menu__close');
 
-humburger.addEventListener('click', () => {
-   menu.classList.add('active');
-});
-closeBtn.addEventListener('click', () => {
-   menu.classList.remove('active');
-});
-*/
+// humburger.addEventListener('click', () => {
+//    menu.classList.add('active');
+// });
+// closeBtn.addEventListener('click', () => {
+//    menu.classList.remove('active');
+// });
   //TODO script_validation:
   /*
 //validation
@@ -98,4 +119,4 @@ $("a[href^='#']").click(function () {
 	return false;
 });
 */
-});
+// });
