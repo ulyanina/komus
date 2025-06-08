@@ -19,29 +19,37 @@
    &__icons {
       display: flex;
       align-items: flex-end;
+      justify-content: center;
       margin-bottom: 12px;
    }
 
    &__number {
+      background: url('../../src/icons/instructions/number-elipse.png') center center/cover no-repeat;
       position: relative;
-      bottom: 6px;
-      left: 10px;
+      // bottom: 6px;
+      // left: 10px;
+      top: 0;
+      left: 0px;
       font-size: 18px;
       font-weight: 700;
+      line-height: 30px;
       min-width: 30px;
       color: #ffffff;
-      &::before {
-         content: '';
-         width: 30px;
-         height: 30px;
-         border-radius: 50%;
-         background-color: #da1f2a;
-         display: inline-block;
-         position: absolute;
-         bottom: -6px;
-         left: -10px;
-         z-index: -1;
-      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // &::before {
+      //    content: '';
+      //    width: 30px;
+      //    height: 30px;
+      //    border-radius: 50%;
+      //    background-color: #da1f2a;
+      //    display: inline-block;
+      //    position: absolute;
+      //    bottom: -6px;
+      //    left: -10px;
+      //    z-index: -1;
+      // }
    }
 
    &__icon {
@@ -52,6 +60,7 @@
    }
 
    &__desc {
+      // text-align: center;
       font-weight: 700;
       font-size: 14px;
       line-height: 18px;
