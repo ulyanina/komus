@@ -18,6 +18,7 @@
    }
 
    &__button {
+      // display: block;
       width: 158px;
       height: 42px;
       background-color: #da1f2a;
@@ -28,6 +29,9 @@
       color: #ffffff;
       cursor: pointer;
       border-radius: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       &:hover {
          background-color: #b51b22;
       }

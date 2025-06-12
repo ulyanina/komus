@@ -1,11 +1,15 @@
 .promo {
+   max-width: 984px;
    padding-top: 18px;
    height: 148px;
    background-color: #f9fbff;
    position: relative;
+   margin: auto;
    margin-bottom: 48px;
+   border-radius: 8px;
    &__info {
       position: absolute;
+      padding-bottom: 24px;
       left: 48px;
       top: 18px;
       z-index: 2;
@@ -26,6 +30,7 @@
          position: absolute;
          top: 0;
          right: 0;
+         border-radius: 8px;
       }
    }
 
@@ -42,7 +47,7 @@
       & img {
          width: 41px;
          position: absolute;
-         bottom: 9px;
+         top: 98px;
          right: 314px;
       }
    }
@@ -51,7 +56,7 @@
       & img {
          width: 87px;
          position: absolute;
-         bottom: 23px;
+         top: 37.75px;
          right: 195px;
       }
    }
@@ -69,6 +74,7 @@
    display: flex;
    & img {
       width: 18px;
+      height: 18px;
       margin: 3px;
    }
    &__info {
@@ -80,3 +86,32 @@
       color: #1390df;
    }
 }
+// dialog {
+//    position: fixed;
+//    height: 250px;
+//    width: 350px;
+//    top: 50%;
+//    left: 50%;
+//    transform: translate(-50%, -50%);
+//    border: none;
+//    padding: 0;
+//    background-color: #ffffff;
+//    color: #000000;
+//    text-align: center;
+//    &::backdrop {
+//       background-color: rgb(0 0 0 / 0.8);
+//    }
+// }
+body {
+   //   min-height: 100vh;
+   //   padding: 50px;
+   //   background-color: #18191c;
+   //   color: #ffffff;
+   //   font-family: "Roboto", sans-serif;
+   //   font-size: 18px;
+   //   scrollbar-gutter: stable;
+}
+
+// .scroll-lock {
+//   overflow: hidden;
+// }

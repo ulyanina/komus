@@ -1,14 +1,39 @@
 @media (max-width: 1200px) {
 }
 @media (max-width: 992px) {
+   .promo {
+      // &__subheader {
+      // }
+      &__info {
+         h1 {
+            // font-size: calc(22px + 10 * ((100vw - 320px) / (1014 - 320)));
+         }
+      }
+   }
+   .introduction {
+      & h2 {
+         font-size: calc(18px + 8 * ((100vw - 320px) / (1014 - 320)));
+      }
+   }
    .action {
       &__row {
          h2 {
             font-size: calc(16px + 10 * ((100vw - 320px) / (1014 - 320)));
+            line-height: calc(22px + 10 * ((100vw - 320px) / (1014 - 320)));
          }
       }
       &__button {
          align-self: center;
+      }
+   }
+   .why {
+      & h2 {
+         font-size: calc(18px + 8 * ((100vw - 320px) / (1014 - 320)));
+      }
+   }
+   .faq {
+      & h2 {
+         font-size: calc(18px + 8 * ((100vw - 320px) / (1014 - 320)));
       }
    }
 }
@@ -16,9 +41,12 @@
    .promo {
       &__info {
          & h1 {
-            font-size: calc(25px + 7 * ((100vw - 320px) / (1014 - 320)));
+            font-size: calc(22px + 10 * ((100vw - 320px) / (1014 - 320)));
             line-height: calc(31px + 9 * ((100vw - 320px) / (1014 - 320)));
          }
+      }
+      &__img {
+         opacity: 0.5;
       }
    }
    .introduction {
@@ -47,9 +75,37 @@
    .action {
       padding: 24px 22px;
    }
+   .why {
+      &__item {
+         padding: 15px;
+      }
+   }
 }
 @media (max-width: 576px) {
+   .promo {
+      min-height: 373px;
+      // background-color: #f1f3f9;
+      background:#f1f3f9 url('../../img/promo/promo-mobile-400.png') 0 0/100% no-repeat;
+      &__info {
+         // top: 190px;
+         top: 270px;
+         // bottom: 24px;
+         left: 20px;
+         width: 90%;
+         margin-bottom: 24px;
+      }
+      &__img {
+         opacity: 1;
+      }
+      &__img {
+         display: none;
+      }
+   }
    .introduction {
+      & h2 {
+         font-weight: 700;
+         margin-bottom: 12px;
+      }
       &__row {
          flex-wrap: wrap;
          justify-content: center;
@@ -71,17 +127,48 @@
    .action {
       &__row {
          flex-direction: column;
+         align-items: center;
          h2 {
-            align-self: start;
-            font-size: 26px;
+            text-align: center;
+            margin-right: 0;
+            margin-bottom: 12px;
+            font-weight: 700;
          }
+      }
+      &__button {
+         width: 100%;
+      }
+   }
+   .why {
+      & h2 {
+         font-weight: 700;
+         margin-bottom: 12px;
+      }
+      &__row {
+         gap: 15px;
+      }
+      &__item {
+         padding: 8px;
+      }
+   }
+   .faq {
+      & h2 {
+         font-weight: 700;
+         margin-bottom: 12px;
       }
    }
 }
+
 @media (max-width: 470px) {
+   .promo {
+      margin-bottom: 36px;
+      &__info {
+         top: 234px;
+      }
+   }
    .introduction {
       &__row {
-         gap: 5px;
+         gap: 12px;
       }
       &__item {
          display: flex;
@@ -91,6 +178,7 @@
       }
       &__icons {
          align-items: flex-start;
+         margin-bottom: 0;
       }
       &__icon {
          width: 82.69px;
@@ -102,6 +190,58 @@
       }
       &__desc {
          align-items: center;
+      }
+   }
+   .why {
+      &__row {
+         flex-direction: column;
+      }
+      &__item {
+         padding: 20px;
+         border-radius: 8px;
+         width: 100%;
+      }
+      &__subheader {
+         margin-bottom: 8px;
+      }
+      &__text {
+         line-height: 20px;
+         width: 100%;
+      }
+   }
+}
+@media (max-width: 400px) {
+   .promo {
+      margin-bottom: 24px;
+      min-height: 354px;
+      &__subheader {
+         & img {
+            margin-right: 11px;
+         }
+         & p {
+            width: 200px;
+         }
+      }
+
+      &__info {
+         top: 195px;
+      }
+   }
+   .why {
+      &__row {
+         flex-direction: column;
+      }
+      &__item {
+         background-color: #f1f3f9;
+         padding: 20px;
+         border-radius: 8px;
+      }
+      &__subheader {
+         margin-bottom: 8px;
+      }
+      &__text {
+         line-height: 20px;
+         width: 287px;
       }
    }
 }

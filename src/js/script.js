@@ -1,122 +1,48 @@
-document.querySelectorAll('.faq details').forEach((item) =&gt; {
-  item.addEventListener('toggle', (event) =&gt; {
-    if (event.target.open) {
-      document.querySelectorAll('.faq details').forEach((otherItem) =&gt; {
-        if (otherItem !== event.target) {
-          otherItem.removeAttribute('open');
-        }
-      });
-    }
-  });
-});
-
-
-// window.addEventListener("DOMContentLoaded", () => {
-  //TODO script_menu_ & _hamburger:
-  // first variant of menu
-
-const arrowUp = document.querySelector('.arrow-up'),
-   arrowDown = document.querySelector('.arrow-down'),
-      questionButton = document.querySelector('.faq__question');
-
-
-     
-      //   menuItem = document.querySelectorAll('.menu_item'),
-      //   closeBtn = document.querySelector('.menu__close'),
-      //   veil = document.querySelector('.veil'),
-      //   hamburger = document.querySelector('.hamburger');
-arrowUp.addEventListener('click', () => {
-   arrowUp.classList.toggle('arrow-down'),
-      arrowUp.classList.toggle('arrow-down__active'),
-
-   });
-   //  hamburger.addEventListener('click', () => {
-   //      hamburger.classList.toggle('hamburger_active');
-   //      menu.classList.toggle('menu_active');
-   //      veil.classList.toggle('presentation-veil'); //пелена 
-   //  });
-
-   //  closeBtn.addEventListener('click', () => {
-	// 	menu.classList.toggle('menu-active');
-	// 	veil.classList.toggle('presentation-veil'); //пелена 
-	// });
-
-   //  menuItem.forEach(item => {
-   //      item.addEventListener('click', () => {
-   //          hamburger.classList.toggle('hamburger_active');
-   //          menu.classList.toggle('menu_active');
-   //          veil.classList.toggle('presentation-veil');
-   //      })
-   //  })
-
-
-//second variant of menu
-// const humburger = document.querySelector('.humburger'),
-//    menu = document.querySelector('.menu'),
-//    closeBtn = document.querySelector('.menu__close');
-
-// humburger.addEventListener('click', () => {
-//    menu.classList.add('active');
+// document.querySelectorAll('.faq details').forEach((item) =&gt; {
+//   item.addEventListener('toggle', (event) =&gt; {
+//     if (event.target.open) {
+//       document.querySelectorAll('.faq details').forEach((otherItem) =&gt; {
+//         if (otherItem !== event.target) {
+//           otherItem.removeAttribute('open');
+//         }
+//       });
+//     }
+//   });
 // });
-// closeBtn.addEventListener('click', () => {
-//    menu.classList.remove('active');
-// });
-  //TODO script_validation:
-  /*
-//validation
-function validateForms(form) {
-	$(form).validate({
-		rules: {
-			name: {
-				required: true,
-				minlength: 2
-			},
-			email: {
-				required: true,
-				email: true
-         },
-         message: {
-            required: true
-         },
-         policy: {
-            required: true
-         }
-		},
-		messages: {
-			name: {
-				required: 'Пожалуйста, введите свое имя',
-				minlength: jQuery.validator.format('Минимальное количество символов: {0}')
-			},
-			email: {
-				required: 'Пожалуйста, введите свой почтовый адрес',
-				email: 'Неправильно введен адрес почты'
-         },
-         message: {
-				required: 'Пожалуйста, опишите задачу'
-         },
-         policy: {
-            required: 'Чтобы отправить сообщение Вы должны согласиться с политикой конфиденциальности'
-         }
-		}
-	});
-}
-validateForms('#contacts__forms-row');
-*/
-  //TODO smooth scroll and pageup:
-  /*
-//Smooth scroll and pageup
-$(window).scroll(function () {
-	if ($(this).scrollTop() > 1600) {
-		$('.pageup').fadeIn();
-	} else {
-		$('.pageup').fadeOut();
-	}
-});
 
-$("a[href^='#']").click(function () {
-	const _href = $(this).attr('href');
-	$('html, body').animate({ scrollTop: $(_href).offset().top + 'px' });
-	return false;
-});
-*/
+// const dialog = document.getElementById('myDialog')
+// const dialogOpener = document.querySelector('.openDialogBtn')
+// const dialogCloser = dialog.querySelector('.closeDialogBtn')
+
+// function openModalAndLockScroll() {
+//   dialog.showModal()
+//   document.body.classList.add('scroll-lock')
+// }
+
+// function returnScroll() {
+//   document.body.classList.remove('scroll-lock')
+// }
+
+// function close() {
+//   dialog.close()
+//   returnScroll()
+// }
+
+// dialogOpener.addEventListener('click', openModalAndLockScroll)
+// dialogCloser.addEventListener('click', (event) => {
+//   event.stopPropagation()
+//   close()
+// })
+
+// function closeOnBackDropClick({ currentTarget, target }) {
+//   const dialog = currentTarget
+//   const isClickedOnBackDrop = target === dialog
+//   if (isClickedOnBackDrop) {
+//     close()
+//   }
+// }
+
+// dialog.addEventListener('click', closeOnBackDropClick)
+// dialog.addEventListener('cancel', (event) => {
+//   returnScroll()
 // });

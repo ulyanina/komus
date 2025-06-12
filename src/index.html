@@ -8,37 +8,57 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
-  <body>
+  <body class="parent">
     <div class="wrapper">
+     <!-- TODO popup -->
+       <!-- <button
+        class="openDialogBtn button-violet"
+        type="button"
+        aria-haspopup="dialog"
+        aria-controls="myDialog"
+        >
+        Открыть попап
+      </button>
+      <dialog class="child" id="myDialog">
+        <div class="dialog__wrapper">
+          <h2>Дока — самая добрая документация &#128579</h2>
+          <button
+            class="closeDialogBtn button-black"
+            type="button"
+          >
+            Согласен &#128156
+          </button>
+        </div>
+      </dialog> -->
+      <section class="promo">
+        <div class="promo__info">
+          <h1>Дарим 30 ₽ на баланс мобильного телефона за Ваш отзыв</h1>
+          <div class="promo__subheader subheader">
+            <img src="icons/promo/alert_info.png" alt="img" />
+            <a href="#" class="subheader__info">
+              Условия проведения акции «Оставьте свой отзыв»
+            </a>
+          </div>
+        </div>
+        <div class="promo__img">
+          <div class="promo__vector">
+            <img src="icons/promo/vector.png" alt="vector-img" />
+          </div>
+          <div class="promo__app">
+            <img src="icons/promo/app.png" alt="app-img" />
+          </div>
+          <div class="promo__like">
+            <img src="icons/promo/like.png" alt="like-img" />
+          </div>
+          <div class="promo__ruble">
+            <img src="icons/promo/ruble coin.png" alt="ruble-img" />
+          </div>
+          <div class="promo__rating">
+            <img src="icons/promo/rating.png" alt="rating-img" />
+          </div>
+        </div>
+      </section>
       <div class="container">
-        <section class="promo">
-          <div class="promo__info">
-            <h1>Дарим 30 ₽ на баланс мобильного телефона за Ваш отзыв</h1>
-            <div class="subheader">
-              <img src="icons/promo/alert_info.png" alt="img" />
-              <p class="subheader__info">
-                Условия проведения акции «Оставьте свой отзыв»
-              </p>
-            </div>
-          </div>
-          <div class="promo__img">
-            <div class="promo__vector">
-              <img src="icons/promo/vector.png" alt="vector-img" />
-            </div>
-            <div class="promo__app">
-              <img src="icons/promo/app.png" alt="app-img" />
-            </div>
-            <div class="promo__like">
-              <img src="icons/promo/like.png" alt="like-img" />
-            </div>
-            <div class="promo__ruble">
-              <img src="icons/promo/ruble coin.png" alt="ruble-img" />
-            </div>
-            <div class="promo__rating">
-              <img src="icons/promo/rating.png" alt="rating-img" />
-            </div>
-          </div>
-        </section>
         <section class="introduction">
           <h2>Как оставить отзыв</h2>
           <div class="introduction__row">
@@ -90,7 +110,7 @@
           <div class="action__row">
             <h2>Мы дорожим вашим мнением и ждём его!</h2>
 
-            <button class="action__button">Оставить отзыв</button>
+            <a href="#" class="action__button">Оставить отзыв</a>
           </div>
         </section>
         <section class="why">
@@ -125,37 +145,38 @@
         <section class="faq">
           <h2>Вопросы и ответы</h2>
           <div class="faq__column">
-            <details open class="faq__item">
+            <details class="faq__item">
+              <summary class="faq__question">
+                Какие условия проведения акции?
+              </summary>
+              <p class="faq__answer">
+                Организатор акции — ООО «КОМУС». Сроки проведения акции: с
+                01.10.2024 по 31.12.2024 г. Организатор оставляет за собой право
+                досрочного прекращения акции или изменения ее условий в
+                одностороннем порядке. В акции могут принять участие только
+                зарегистрированные Пользователи, подтвердившие свой номер
+                телефона, указанный в Личном кабинете. Учитываются отзывы только
+                о ранее приобретенном товаре. За каждый отзыв, прошедший
+                модерацию и опубликованный на сайте komus.com, на номер
+                мобильного телефона будет начислено 30 рублей. Срок модерации
+                отзыва — до 7 рабочих дней. В особых случаях время может
+                увеличится с уведомлением автора отзыва. Срок начисления
+                вознаграждения — до 14 рабочих дней с момента размещения отзыва
+                на сайте komus.com. За отзыв, не прошедший модерацию,
+                вознаграждение автору отзыва не начисляется.
+              </p>
+            </details>
+            <details class="faq__item">
               <summary class="faq__question">
                 Кто может оставлять отзывы?
-                <img
-                  class="arrow-down"
-                  src="icons/faq/arrow-down.png"
-                  alt="img"
-                />
-                <img
-                  class="arrow-up__active"
-                  src="icons/faq/arrow-up.png"
-                  alt="img"
-                />
               </summary>
               <p class="faq__answer">
                 Оставлять отзывы могут только зарегистрированные пользователи.
               </p>
             </details>
-            <details open class="faq__item">
+            <details class="faq__item">
               <summary class="faq__question">
                 Когда будет опубликован мой отзыв?
-                <img
-                  class="arrow-down"
-                  src="icons/faq/arrow-down.png"
-                  alt="img"
-                />
-                <img
-                  class="arrow-up__active"
-                  src="icons/faq/arrow-up.png"
-                  alt="img"
-                />
               </summary>
               <p class="faq__answer">
                 Отзыв будет опубликован после модерации. Срок проверки и
@@ -163,19 +184,9 @@
                 понадобится больше времени, мы свяжемся с вами дополнительно.
               </p>
             </details>
-            <details open class="faq__item">
+            <details class="faq__item">
               <summary class="faq__question">
                 Какие мои данные будут опубликованы?
-                <img
-                  class="arrow-down"
-                  src="icons/faq/arrow-down.png"
-                  alt="img"
-                />
-                <img
-                  class="arrow-up__active"
-                  src="icons/faq/arrow-up.png"
-                  alt="img"
-                />
               </summary>
               <p class="faq__answer">
                 Рядом с отзывом укажем только ваше имя либо «Аноним», если
@@ -185,19 +196,9 @@
                 публиковать мои данные на сайте».
               </p>
             </details>
-            <details open class="faq__item">
+            <details class="faq__item">
               <summary class="faq__question">
                 Почему я не вижу свой отзыв?
-                <img
-                  class="arrow-down"
-                  src="icons/faq/arrow-down.png"
-                  alt="img"
-                />
-                <img
-                  class="arrow-up__active"
-                  src="icons/faq/arrow-up.png"
-                  alt="img"
-                />
               </summary>
               <p class="faq__answer">
                 Все отзывы проходят модерацию в течение 7 рабочих дней. Отзыв не
@@ -212,38 +213,18 @@
                 куплен в Комус.
               </p>
             </details>
-            <details open class="faq__item">
+            <details class="faq__item">
               <summary class="faq__question">
                 До какого времени проходит акция?
-                <img
-                  class="arrow-down"
-                  src="icons/faq/arrow-down.png"
-                  alt="img"
-                />
-                <img
-                  class="arrow-up__active"
-                  src="icons/faq/arrow-up.png"
-                  alt="img"
-                />
               </summary>
               <p class="faq__answer">
                 Акция заканчивается 31 декабря 2024 года. Однако, организатор
                 оставляет за собой право изменения сроков и условий.
               </p>
             </details>
-            <details open class="faq__item">
+            <details class="faq__item">
               <summary class="faq__question">
                 Вы начислите 30 рублей за каждый отзыв?
-                <img
-                  class="arrow-down"
-                  src="icons/faq/arrow-down.png"
-                  alt="img"
-                />
-                <img
-                  class="arrow-up__active"
-                  src="icons/faq/arrow-up.png"
-                  alt="img"
-                />
               </summary>
               <p class="faq__answer">
                 Да, за каждый прошедший модерацию отзыв о приобретенном у нас
@@ -260,8 +241,7 @@
         <section class="action">
           <div class="action__row">
             <h2>Мы дорожим вашим мнением и ждём его!</h2>
-
-            <button class="action__button">Оставить отзыв</button>
+            <a href="#" class="action__button">Оставить отзыв</a>
           </div>
         </section>
       </div>
@@ -274,6 +254,6 @@
     <!-- <script src="js/jquery.validate.min.js"></script> -->
     <!-- <script src="js/jquery.maskedinput.min.js"></script> -->
     <!-- <script src="js/wow.min.js"></script> -->
-    <!-- <script src="js/script.js"></script> -->
+    <script src="js/script.js"></script>
   </body>
 </html>
